@@ -2,9 +2,8 @@
 
 This is the main repository for the Graph-Inceptor tool developed in Graph-Massivizer. It consists of two different components that are maintained in separate component-specific repositories:
 
-* <TBD>
+* https://github.com/graph-massivizer/graph-inceptor-etl-pipeline
 * https://github.com/graph-massivizer/graph-inceptor-graphma
-* 
 
 ## Description
 **DESCRIPTION PARAGRAPHS**
