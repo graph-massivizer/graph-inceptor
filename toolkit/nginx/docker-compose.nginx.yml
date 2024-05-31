@@ -1,0 +1,31 @@
+version: "2.2"
+services:
+
+  nginx-proxy:
+    container_name: nginx-proxy
+    image: "${NGINX_IMAGE}"
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./certs:/etc/nginx/certs:ro
+      - ./vhost.d:/etc/nginx/vhost.d:ro
+      - ./conf.d:/etc/nginx/conf.d:rw
+      - ./htpasswd:/etc/nginx/htpasswd:ro
+      - ./html:/usr/share/nginx/html:ro
+      - ./templates/nginx.tmpl:/app/nginx.tmpl:ro
+    networks:
+      - proxy_network
+    environment:
+      - DEFAULT_HOST=${DEFAULT_HOST}
+      - HSTS=max-age=31536000; includeSubDomains; preload
+    ports:
+      - "443:443"
+      - "80:80"
+    logging:
+     driver: json-file
+     options:
+      max-size: "200k"
+      max-file: "10"
+
+networks:
+  proxy_network:

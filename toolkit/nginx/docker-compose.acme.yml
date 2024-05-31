@@ -1,0 +1,19 @@
+version: "2.2"
+services:
+  nginx-proxy-acme:
+    container_name: nginx-proxy-acme
+    image: "${ACME_COMPANION_IMAGE}"
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./conf.d:/etc/nginx/conf.d:rw
+      - ./vhost.d:/etc/nginx/vhost.d:rw
+      - ./html:/usr/share/nginx/html:rw
+      - ./certs:/etc/nginx/certs:rw
+      - ./acme:/etc/acme.sh:rw
+    networks:
+      - proxy_network
+    environment:
+      NGINX_PROXY_CONTAINER: "nginx-proxy"
+
+
