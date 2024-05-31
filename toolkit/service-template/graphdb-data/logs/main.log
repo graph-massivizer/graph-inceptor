@@ -196,3 +196,38 @@ org.eclipse.rdf4j.http.server.ClientHTTPException: Unknown repository: metaphact
 [INFO ] 2024-05-31 10:44:00,046 [repositories/metaphactory | c.o.g.s.TupleQueryResultView] Request for query -841200509 is finished
 [INFO ] 2024-05-31 10:44:00,048 [repositories/metaphactory | c.o.g.s.TupleQueryResultView] Request for query 1415858166 is finished
 [INFO ] 2024-05-31 10:44:00,049 [repositories/metaphactory | c.o.g.s.TupleQueryResultView] Request for query 1415858166 is finished
+[INFO ] 2024-05-31 11:04:57,488 [repositories/metaphactory | c.o.g.s.h.GraphDBQueryResultHandler] POST query 305213818
+[INFO ] 2024-05-31 11:04:57,489 [repositories/metaphactory | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1131137531
+[INFO ] 2024-05-31 11:04:57,500 [repositories/metaphactory | o.e.r.h.s.r.BooleanQueryResultView] Request for query 305213818 is finished
+[INFO ] 2024-05-31 11:04:57,500 [repositories/metaphactory | c.o.g.s.TupleQueryResultView] Request for query -1131137531 is finished
+[INFO ] 2024-05-31 11:04:57,601 [repositories/metaphactory | c.o.g.s.h.GraphDBQueryResultHandler] POST query 1415858166
+[INFO ] 2024-05-31 11:04:57,607 [repositories/metaphactory | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1705760822
+[INFO ] 2024-05-31 11:04:57,608 [repositories/metaphactory | c.o.g.s.h.GraphDBQueryResultHandler] POST query -557788681
+[INFO ] 2024-05-31 11:04:57,614 [repositories/metaphactory | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1495670545
+[INFO ] 2024-05-31 11:04:57,616 [repositories/metaphactory | c.o.g.s.TupleQueryResultView] Request for query -557788681 is finished
+[INFO ] 2024-05-31 11:04:57,621 [repositories/metaphactory | c.o.g.s.TupleQueryResultView] Request for query 1415858166 is finished
+[INFO ] 2024-05-31 11:04:57,630 [repositories/metaphactory | c.o.g.s.TupleQueryResultView] Request for query -1705760822 is finished
+[INFO ] 2024-05-31 11:04:57,641 [repositories/metaphactory | c.o.g.s.TupleQueryResultView] Request for query -1495670545 is finished
+[INFO ] 2024-05-31 11:04:59,300 [repositories/metaphactory | c.o.g.s.h.GraphDBQueryResultHandler] POST query 364258211
+[INFO ] 2024-05-31 11:04:59,300 [repositories/metaphactory | c.o.g.s.h.GraphDBQueryResultHandler] POST query 305213818
+[INFO ] 2024-05-31 11:04:59,308 [repositories/metaphactory | o.e.r.h.s.r.BooleanQueryResultView] Request for query 305213818 is finished
+[INFO ] 2024-05-31 11:04:59,308 [repositories/metaphactory | c.o.g.s.TupleQueryResultView] Request for query 364258211 is finished
+[INFO ] 2024-05-31 11:05:04,950 [repositories/metaphactory | c.o.g.s.h.GraphDBQueryResultHandler] POST query 305213818
+[INFO ] 2024-05-31 11:05:04,950 [repositories/metaphactory | c.o.g.s.h.GraphDBQueryResultHandler] POST query 1151369117
+[INFO ] 2024-05-31 11:05:04,954 [repositories/metaphactory | o.e.r.h.s.r.BooleanQueryResultView] Request for query 305213818 is finished
+[INFO ] 2024-05-31 11:05:04,954 [repositories/metaphactory | c.o.g.s.TupleQueryResultView] Request for query 1151369117 is finished
+[INFO ] 2024-05-31 11:05:05,047 [repositories/metaphactory | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2024-05-31 11:05:05,096 [repositories/metaphactory | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2024-05-31 11:05:05,126 [repositories/metaphactory | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1605254690
+[INFO ] 2024-05-31 11:05:05,147 [repositories/metaphactory | c.o.g.s.TupleQueryResultView] Request for query -1605254690 is finished
+[INFO ] 2024-05-31 11:05:46,405 [repositories/metaphactory | c.o.g.s.GraphController] POST data to graph
+[INFO ] 2024-05-31 11:05:46,408 [repositories/metaphactory | c.o.g.s.GraphController] no base URI specified, using 'file:///results.ttl-31-05-2024-01-05-46'
+[INFO ] 2024-05-31 11:05:48,314 [repositories/metaphactory | c.o.g.s.GraphController] POST data request finished.
+[INFO ] 2024-05-31 11:05:50,380 [repositories/metaphactory | c.o.g.s.h.GraphDBQueryResultHandler] POST query 1151369117
+[INFO ] 2024-05-31 11:05:50,386 [repositories/metaphactory | c.o.g.s.TupleQueryResultView] Request for query 1151369117 is finished
+[INFO ] 2024-05-31 11:05:50,432 [repositories/metaphactory | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2024-05-31 11:05:50,440 [repositories/metaphactory | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2024-05-31 11:05:50,488 [repositories/metaphactory | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1469398501
+[INFO ] 2024-05-31 11:05:50,492 [repositories/metaphactory | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1605254690
+[INFO ] 2024-05-31 11:05:50,503 [repositories/metaphactory | c.o.g.s.TupleQueryResultView] Request for query -1469398501 is finished
+[INFO ] 2024-05-31 11:05:50,543 [repositories/metaphactory | c.o.g.s.TupleQueryResultView] Request for query -1605254690 is finished

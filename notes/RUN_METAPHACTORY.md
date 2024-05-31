@@ -19,3 +19,9 @@ admin admin
 # GraphDB
 
 http://localhost:7200/
+
+# Load Sample Data
+
+- results.ttl from demo_data_repository
+- go to settings in http://localhost:10214
+- data import/export
