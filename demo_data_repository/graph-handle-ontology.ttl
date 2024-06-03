@@ -1,0 +1,137 @@
+@prefix schema: <https://schema.org/> .
+@prefix resourcehub-forms: <http://resourcehub.metaphacts.com/forms/> .
+@prefix gmi: <https://graph-massivizer.metaphacts.net/instance/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pacv: <http://vocabularies.metaphacts.com/project_activity/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix gm: <http://ontologies.metaphacts.com/graph-massivizer_ontology/> .
+@prefix pa: <http://ontologies.metaphacts.com/project_activity_ontology/> .
+@prefix resourcehub: <http://resourcehub.metaphacts.com/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix resourcehub-components: <http://resourcehub.metaphacts.com/components/> .
+@prefix rh: <http://ontologies.metaphacts.com/resourcehub/> .
+@prefix resourcehub-entry: <http://resourcehub.metaphacts.com/entry/> .
+@prefix resourcehub-config: <http://resourcehub.metaphacts.com/config/> .
+@prefix dataset: <http://ontologies.metaphacts.com/dataset_ontology/> .
+@prefix kira: <http://ontologies.metaphacts.com/KIRA-Ontology/> .
+
+<https://ontologies.metaphacts.com/graph-handle/0.1> a owl:Ontology;
+  dct:title "Graph Handle";
+  <http://www.linkedmodel.org/1.2/schema/vaem#namespace> <https://ontologies.metaphacts.com/graph-handle/>;
+  rdfs:label "Graph Handle";
+  owl:versionInfo "0.1";
+  dct:modified "2024-05-31T11:54:15.783Z"^^xsd:dateTime;
+  dct:created "2024-05-31T11:23:05.614Z"^^xsd:dateTime;
+  dct:creator "aaronEberhart";
+  dct:contributor "aaronEberhart";
+  <http://open-services.net/ns/core#modifiedBy> "aaronEberhart";
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft> .
+
+<https://ontologies.metaphacts.com/graph-handle/SourceGraph> a owl:Class;
+  rdfs:subClassOf <https://ontologies.metaphacts.com/graph-handle/Graph>;
+  rdfs:label "Source Graph"@en;
+  rdfs:isDefinedBy <https://ontologies.metaphacts.com/graph-handle/0.1>;
+  dct:modified "2024-05-31T11:29:00.122Z"^^xsd:dateTime;
+  dct:created "2024-05-31T11:29:00.122Z"^^xsd:dateTime;
+  dct:creator "aaronEberhart";
+  dct:contributor "aaronEberhart";
+  <http://open-services.net/ns/core#modifiedBy> "aaronEberhart" .
+
+<https://ontologies.metaphacts.com/graph-handle/sourceGraph> a owl:ObjectProperty;
+  rdfs:label "source graph";
+  rdfs:isDefinedBy <https://ontologies.metaphacts.com/graph-handle/0.1>;
+  dct:modified "2024-05-31T11:29:00.122Z"^^xsd:dateTime;
+  dct:created "2024-05-31T11:29:00.122Z"^^xsd:dateTime;
+  dct:creator "aaronEberhart";
+  dct:contributor "aaronEberhart";
+  <http://open-services.net/ns/core#modifiedBy> "aaronEberhart" .
+
+<https://ontologies.metaphacts.com/graph-handle/Graph> a owl:Class;
+  rdfs:label "Graph"@en;
+  rdfs:isDefinedBy <https://ontologies.metaphacts.com/graph-handle/0.1>;
+  dct:modified "2024-05-31T11:29:00.122Z"^^xsd:dateTime, "2024-05-31T11:50:38.177Z"^^xsd:dateTime;
+  dct:created "2024-05-31T11:29:00.122Z"^^xsd:dateTime;
+  dct:creator "aaronEberhart";
+  dct:contributor "aaronEberhart";
+  <http://open-services.net/ns/core#modifiedBy> "aaronEberhart" .
+
+<https://ontologies.metaphacts.com/graph-handle/GraphHandle> a owl:Class;
+  rdfs:label "Graph Handle"@en;
+  rdfs:isDefinedBy <https://ontologies.metaphacts.com/graph-handle/0.1>;
+  dct:modified "2024-05-31T11:51:13.873Z"^^xsd:dateTime;
+  dct:created "2024-05-31T11:29:00.122Z"^^xsd:dateTime;
+  dct:creator "aaronEberhart";
+  dct:contributor "aaronEberhart";
+  <http://open-services.net/ns/core#modifiedBy> "aaronEberhart" .
+
+<https://ontologies.metaphacts.com/graph-handle/GraphHandleShape> a sh:NodeShape;
+  sh:property [
+      sh:class <https://ontologies.metaphacts.com/graph-handle/SourceGraph>;
+      sh:path <https://ontologies.metaphacts.com/graph-handle/sourceGraph>;
+      sh:minCount 1
+    ], [
+      sh:class <https://ontologies.metaphacts.com/graph-handle/Graph>;
+      sh:path <https://ontologies.metaphacts.com/graph-handle/referencesGraph>;
+      sh:minCount 1
+    ];
+  sh:targetClass <https://ontologies.metaphacts.com/graph-handle/GraphHandle> .
+
+<https://ontologies.metaphacts.com/graph-handle/referencesGraph> a owl:ObjectProperty;
+  rdfs:label "references graph";
+  rdfs:isDefinedBy <https://ontologies.metaphacts.com/graph-handle/0.1>;
+  dct:modified "2024-05-31T11:48:17.190Z"^^xsd:dateTime;
+  dct:created "2024-05-31T11:48:17.190Z"^^xsd:dateTime;
+  dct:creator "aaronEberhart";
+  dct:contributor "aaronEberhart";
+  <http://open-services.net/ns/core#modifiedBy> "aaronEberhart" .
+
+<https://ontologies.metaphacts.com/graph-handle/Node> a owl:Class;
+  rdfs:subClassOf <https://ontologies.metaphacts.com/graph-handle/Graph>;
+  rdfs:label "Node"@en;
+  rdfs:isDefinedBy <https://ontologies.metaphacts.com/graph-handle/0.1>;
+  dct:modified "2024-05-31T11:50:38.177Z"^^xsd:dateTime;
+  dct:created "2024-05-31T11:50:38.177Z"^^xsd:dateTime;
+  dct:creator "aaronEberhart";
+  dct:contributor "aaronEberhart";
+  <http://open-services.net/ns/core#modifiedBy> "aaronEberhart" .
+
+<https://ontologies.metaphacts.com/graph-handle/contains> a owl:ObjectProperty;
+  rdfs:label "contains";
+  rdfs:isDefinedBy <https://ontologies.metaphacts.com/graph-handle/0.1>;
+  dct:modified "2024-05-31T11:50:38.177Z"^^xsd:dateTime;
+  dct:created "2024-05-31T11:50:38.177Z"^^xsd:dateTime;
+  dct:creator "aaronEberhart";
+  dct:contributor "aaronEberhart";
+  <http://open-services.net/ns/core#modifiedBy> "aaronEberhart" .
+
+<https://ontologies.metaphacts.com/graph-handle/betweennessCentrality> a owl:DatatypeProperty;
+  rdfs:label "betweenness centrality";
+  rdfs:isDefinedBy <https://ontologies.metaphacts.com/graph-handle/0.1>;
+  dct:modified "2024-05-31T11:50:38.177Z"^^xsd:dateTime;
+  dct:created "2024-05-31T11:50:38.177Z"^^xsd:dateTime;
+  dct:creator "aaronEberhart";
+  dct:contributor "aaronEberhart";
+  <http://open-services.net/ns/core#modifiedBy> "aaronEberhart" .
+
+<https://ontologies.metaphacts.com/graph-handle/GraphShape> a sh:NodeShape;
+  sh:property [
+      sh:class <https://ontologies.metaphacts.com/graph-handle/Node>;
+      sh:path <https://ontologies.metaphacts.com/graph-handle/contains>
+    ];
+  sh:targetClass <https://ontologies.metaphacts.com/graph-handle/Graph> .
+
+<https://ontologies.metaphacts.com/graph-handle/NodeShape> a sh:NodeShape;
+  sh:property [
+      sh:path <https://ontologies.metaphacts.com/graph-handle/betweennessCentrality>;
+      sh:datatype xsd:float
+    ];
+  sh:targetClass <https://ontologies.metaphacts.com/graph-handle/Node> .
