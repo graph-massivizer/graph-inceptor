@@ -63,4 +63,4 @@ Graph-Inceptor provides the functionality required to create a (Virtual) Knowled
 
 ## Tests
 
-Both components of Graph-Inceptor intend to use unit testing to test individual functions (e.g., the implementation of a set of BGOs). However, this is not sufficient to test that a **Graph Data Pipeline** actually works. For this we also need integration testing. A first step in defining such integration tests is to have a fully working data pipeline, e.g., the Use Case 0 (UC-0) example described above.
+Both components of Graph-Inceptor intend to use unit testing to main individual functions (e.g., the implementation of a set of BGOs). However, this is not sufficient to main that a **Graph Data Pipeline** actually works. For this we also need integration testing. A first step in defining such integration tests is to have a fully working data pipeline, e.g., the Use Case 0 (UC-0) example described above.
