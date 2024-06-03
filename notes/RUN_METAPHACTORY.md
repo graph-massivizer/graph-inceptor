@@ -24,6 +24,7 @@ http://localhost:7200/
 
 - results.ttl from demo_data_repository
 - go to settings in http://localhost:10214
+<<<<<<< HEAD
 - data import/export
 
 
@@ -33,3 +34,6 @@ http://localhost:7200/
 - fix repository 
 - improve documentation 
 - establish gradle project
+=======
+- data import/export
+>>>>>>> localdeploy

@@ -1,0 +1,59 @@
+@prefix makg: <https://makg.org/entity/> .
+@prefix soa: <https://semopenalex.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix semopenalex: <http://www.metaphactory.semopenalex.com/app/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix dbprop: <http://dbpedia.org/property/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix elastic: <http://www.ontotext.com/connectors/elasticsearch#> .
+
+<https://semopenalex.org/work/W3202202588> cito:cites <https://semopenalex.org/work/W2137079713>,
+    <https://semopenalex.org/work/W1998044200>, <https://semopenalex.org/work/W3023306850>,
+    <https://semopenalex.org/work/W1515857575>, <https://semopenalex.org/work/W2092995169>,
+    <https://semopenalex.org/work/W4247756142>, <https://semopenalex.org/work/W2106002037>,
+    <https://semopenalex.org/work/W3164348836>, <https://semopenalex.org/work/W2792053886>,
+    <https://semopenalex.org/work/W1644586429>, <https://semopenalex.org/work/W2953712093>,
+    <https://semopenalex.org/work/W4206634230>, <https://semopenalex.org/work/W4255572973>,
+    <https://semopenalex.org/work/W3095111200>, <https://semopenalex.org/work/W2616225817> .
+
+<https://semopenalex.org/work/W3208244301> cito:cites <https://semopenalex.org/work/W2102802363>,
+    <https://semopenalex.org/work/W224398829>, <https://semopenalex.org/work/W2764222390>,
+    <https://semopenalex.org/work/W3030135313>, <https://semopenalex.org/work/W3164348836>,
+    <https://semopenalex.org/work/W2785440931>, <https://semopenalex.org/work/W2885478809>,
+    <https://semopenalex.org/work/W2938218065>, <https://semopenalex.org/work/W2982699710>,
+    <https://semopenalex.org/work/W2981278439>, <https://semopenalex.org/work/W3014975930>,
+    <https://semopenalex.org/work/W2616225817> .
+
+<https://semopenalex.org/work/W4280507714> cito:cites <https://semopenalex.org/work/W2045738181>,
+    <https://semopenalex.org/work/W1527927437>, <https://semopenalex.org/work/W2155814345>,
+    <https://semopenalex.org/work/W2092822028>, <https://semopenalex.org/work/W4240806681>,
+    <https://semopenalex.org/work/W1491264773>, <https://semopenalex.org/work/W2576220231>,
+    <https://semopenalex.org/work/W1999205643>, <https://semopenalex.org/work/W3126174444>,
+    <https://semopenalex.org/work/W4229496713>, <https://semopenalex.org/work/W1495679621>,
+    <https://semopenalex.org/work/W2624086276>, <https://semopenalex.org/work/W2144581466>,
+    <https://semopenalex.org/work/W17181688>, <https://semopenalex.org/work/W909358770>,
+    <https://semopenalex.org/work/W2058145348>, <https://semopenalex.org/work/W2175849758>,
+    <https://semopenalex.org/work/W2605268732>, <https://semopenalex.org/work/W3030135313>,
+    <https://semopenalex.org/work/W1487497480>, <https://semopenalex.org/work/W1537772377>,
+    <https://semopenalex.org/work/W4241064981>, <https://semopenalex.org/work/W2140933517>,
+    <https://semopenalex.org/work/W3164348836>, <https://semopenalex.org/work/W3106519633>,
+    <https://semopenalex.org/work/W2604877937>, <https://semopenalex.org/work/W2885478809>,
+    <https://semopenalex.org/work/W2751627495>, <https://semopenalex.org/work/W2589936699>,
+    <https://semopenalex.org/work/W2890790624>, <https://semopenalex.org/work/W3080339339>,
+    <https://semopenalex.org/work/W3020238131>, <https://semopenalex.org/work/W2981278439>,
+    <https://semopenalex.org/work/W1497237284>, <https://semopenalex.org/work/W2945888148>,
+    <https://semopenalex.org/work/W970166012>, <https://semopenalex.org/work/W2616225817>,
+    <https://semopenalex.org/work/W3111617389>, <https://semopenalex.org/work/W3161822983> .
