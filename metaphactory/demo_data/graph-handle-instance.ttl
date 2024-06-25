@@ -1,0 +1,59 @@
+@prefix gmi: <https://graph-massivizer.metaphacts.net/instance/> .
+@prefix gh: <https://ontologies.metaphacts.com/graph-handle/> .
+@prefix st: <https://vocabularies.metaphacts.com/source-type/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+gmi:graph-handle-instance a gh:GraphHandle;
+ rdfs:label "Graph Handle Instance";
+ rdfs:comment "A test instanct for graph handles";
+ gh:baseGraph <https://semopenalex.org/sparql>;
+ gh:sourceGraph gmi:AlexandruCloudComputing,
+                gmi:AaronComputerScience,
+                gmi:AaronDescriptionLogic,
+                gmi:AaronsAdvisorComputerScience,
+                gmi:AaronsAdvisorDescriptionLogic .
+
+gmi:AlexandruCloudComputing a gh:SourceGraph;
+ rdfs:label "Graph 1";
+ rdfs:comment "A citation graph for papers by Alexandru that are about cloud computing.";
+ gh:source <file:/citation_network.ttl>;
+ gh:immutable "true"^^xsd:boolean .
+
+gmi:AaronComputerScience a gh:SourceGraph;
+ rdfs:label "Graph 2";
+ rdfs:comment "";
+ gh:source <file:/aaronCS.ttl>;
+ gh:immutable "true"^^xsd:boolean .
+
+gmi:AaronDescriptionLogic a gh:SourceGraph;
+ rdfs:label "Graph 3";
+ rdfs:comment "";
+ gh:source <file:/aaronDL.ttl>;
+ gh:immutable "true"^^xsd:boolean .
+
+gmi:AaronsAdvisorComputerScience a gh:SourceGraph;
+ rdfs:label "Graph 4";
+ rdfs:comment "";
+ gh:source <file:/advisorCS.ttl>;
+ gh:immutable "true"^^xsd:boolean .
+
+gmi:AaronsAdvisorDescriptionLogic a gh:SourceGraph;
+ rdfs:label "Graph 5";
+ rdfs:comment "";
+ gh:source <file:/advisorDL.ttl>;
+ gh:immutable "true"^^xsd:boolean .
+
+<file:/citation_network.ttl> a gh:Source;
+ gh:sourceType st:71eac8f2-e090-4f24-a55f-e7d7293eea21 .
+
+<file:/aaronCS.ttl> a gh:Source;
+ gh:sourceType st:71eac8f2-e090-4f24-a55f-e7d7293eea21 .
+
+<file:/aaronDL.ttl> a gh:Source;
+ gh:sourceType st:71eac8f2-e090-4f24-a55f-e7d7293eea21 .
+
+<file:/advisorCS.ttl> a gh:Source;
+ gh:sourceType st:71eac8f2-e090-4f24-a55f-e7d7293eea21 .
+
+<file:/advisorDL.ttl> a gh:Source;
+ gh:sourceType st:71eac8f2-e090-4f24-a55f-e7d7293eea21 .
