@@ -1,3 +1,4 @@
 #!/bin/bash
 
-./metaphactory/start_metaphactory.sh
+cd metaphactory
+./start_metaphactory.sh
