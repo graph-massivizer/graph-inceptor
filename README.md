@@ -30,9 +30,7 @@ The figure above shows the architecture of the Graph-Inceptor tool. The tool con
 
 1. The [Metaphacts ETL Pipeline](https://github.com/graph-massivizer/graph-inceptor-etl-pipeline) provides a blueprint implementation for a *KG creation pipeline*. The pipeline can read various data sources and map them to RDF, as well as do pre- and post-processing of the data. The result is a **(Virtual) Knowledge Graph** which is stored in a **Graph Storage**. It is not necessary that all source data is converted to RDF. A virtualization approach allows referencing original data in other databases, e.g., time series data or binary files. Access and querying of the KG is supported by well-defined and standardised interfaces through SPARQL endpoints.
 
-2. [Graphma](https://github.com/graph-massivizer/graph-inceptor-graphma) is a *graph processing framework* developed by SINTEF. It reads, assembles, and processes raw or graph data from different formats, offering in-memory access and integration across various processes, and  saving the resulting graph data in various graph file formats. Graphma will support a set of basic graph operations (BGOs) such as LoadNetwork, Filter, Data2Graph, Interface2Graph, StoreGraph, Graph2File, etc.
-
-Graph-Inceptor provides the functionality required to create a (Virtual) Knowledge Graph for the data sources provided by the use cases in the Graph-Massivizer project. The KG is the starting point for further operations and processing of graph data through basic graph operations (BGOs) supported by Graph-Inceptor and Graph-Scrutinizer.
+2. [GraphMa](https://github.com/graph-massivizer/graph-inceptor-graphma) is a *graph processing framework* developed by SINTEF. It reads, assembles, and processes raw or graph data from different formats, offering in-memory access and integration across various processes, and  saving the resulting graph data in various graph file formats. Graphma will support a set of basic graph operations (BGOs) such as LoadNetwork, Filter, Data2Graph, Interface2Graph, StoreGraph, Graph2File, etc.
 
 ### Source code repositories
 
@@ -50,3 +48,7 @@ Graph-Inceptor is released as open source software under the [Apache License, Ve
 1. The [Metaphacts ETL Pipeline](https://github.com/graph-massivizer/graph-inceptor-etl-pipeline) is released as a blueprint implementation on AWS cloud. It uses declarative mappings, which means that no programming is required. However, you will need to define mapping in the [RML language](https://rml.io/specs/rml/).
 
 2. The [Graphma](https://github.com/graph-massivizer/graph-inceptor-graphma) framework is released as a Java library. In addition to Java, it currently also supports the [Kotlin](https://kotlinlang.org/) programming language. We are also considering using [Apache Arrow](https://arrow.apache.org/) to support other programming languages.
+
+### Integration
+
+Graph-Inceptor provides the functionality required to create a (Virtual) Knowledge Graph for the data sources provided by the use cases in the Graph-Massivizer project. The KG is the starting point for further operations and processing of graph data through basic graph operations (BGOs) supported by Graph-Inceptor and Graph-Scrutinizer.
