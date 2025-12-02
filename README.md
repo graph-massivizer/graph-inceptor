@@ -47,7 +47,7 @@ Graph-Inceptor is released as open source software under the [Apache License, Ve
 
 1. The [Metaphacts ETL Pipeline](https://github.com/graph-massivizer/graph-inceptor-etl-pipeline) is released as a blueprint implementation on AWS cloud. It uses declarative mappings, which means that no programming is required. However, you will need to define mapping in the [RML language](https://rml.io/specs/rml/).
 
-2. The [Graphma](https://github.com/graph-massivizer/graph-inceptor-graphma) framework is released as a Java library. In addition to Java, it currently also supports the [Kotlin](https://kotlinlang.org/) programming language. We are also considering using [Apache Arrow](https://arrow.apache.org/) to support other programming languages.
+2. The [Graphma](https://github.com/graph-massivizer/graph-inceptor-graphma) framework is released as a Java library. In addition to Java, it currently also supports the [Kotlin](https://kotlinlang.org/) programming language. It can be extended to support other programming languages using [Apache Arrow](https://arrow.apache.org/).
 
 ### Integration
 
