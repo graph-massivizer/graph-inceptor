@@ -32,6 +32,8 @@ The figure above shows the architecture of the Graph-Inceptor tool. The tool con
 
 2. [Graphma](https://github.com/graph-massivizer/graph-inceptor-graphma) is a *graph processing framework* developed by SINTEF. It reads, assembles, and processes raw or graph data from different formats, offering in-memory access and integration across various processes, and  saving the resulting graph data in various graph file formats. Graphma will support a set of basic graph operations (BGOs) such as LoadNetwork, Filter, Data2Graph, Interface2Graph, StoreGraph, Graph2File, etc.
 
+Graph-Inceptor provides the functionality required to create a (Virtual) Knowledge Graph for the data sources provided by the use cases in the Graph-Massivizer project. The KG is the starting point for further operations and processing of graph data through basic graph operations (BGOs) supported by Graph-Inceptor and Graph-Scrutinizer.
+
 ### Source code repositories
 
 The two components are maintained in two separate repositories on GitHub:
@@ -45,22 +47,6 @@ Graph-Inceptor is released as open source software under the [Apache License, Ve
 
 ### Programming Languages
 
-The [Metaphacts ETL Pipeline](https://github.com/graph-massivizer/graph-inceptor-etl-pipeline) is released as a blueprint implementation on AWS cloud. It uses declarative mappings, which means that no programming is required. However, you will need to define mapping in the [RML language](https://rml.io/specs/rml/).
+1. The [Metaphacts ETL Pipeline](https://github.com/graph-massivizer/graph-inceptor-etl-pipeline) is released as a blueprint implementation on AWS cloud. It uses declarative mappings, which means that no programming is required. However, you will need to define mapping in the [RML language](https://rml.io/specs/rml/).
 
-The [Graphma](https://github.com/graph-massivizer/graph-inceptor-graphma) framework is released as a Java library. In addition to Java, it currently also supports the [Kotlin](https://kotlinlang.org/) programming language. We are also considering using [Apache Arrow](https://arrow.apache.org/) to support other programming languages.
-
-### External Libraries
-
-TBD
-
-### Examples
-
-Use Case 0 example. TBD
-
-## Integration
-
-Graph-Inceptor provides the functionality required to create a (Virtual) Knowledge Graph for the data sources provided by the use cases in the Graph-Massivizer project. The KG is the starting point for further operations and processing of graph data through basic graph operations (BGOs) supported by Graph-Inceptor and Graph-Scrutinizer.
-
-## Tests
-
-Both components of Graph-Inceptor intend to use unit testing to test individual functions (e.g., the implementation of a set of BGOs). However, this is not sufficient to test that a **Graph Data Pipeline** actually works. For this we also need integration testing. A first step in defining such integration tests is to have a fully working data pipeline, e.g., the Use Case 0 (UC-0) example described above.
+2. The [Graphma](https://github.com/graph-massivizer/graph-inceptor-graphma) framework is released as a Java library. In addition to Java, it currently also supports the [Kotlin](https://kotlinlang.org/) programming language. We are also considering using [Apache Arrow](https://arrow.apache.org/) to support other programming languages.
